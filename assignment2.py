@@ -15,7 +15,8 @@ class Assignment2:
                         tempStr = ""
                         tempStr = tempStr + str(anniversaryYear)[2]
                         tempStr = tempStr + str(anniversaryYear)[3]
-                        anniversaries.append(tempStr)
+                        tempInt = int(tempStr)
+                        anniversaries.append(tempInt)
                         anniversaryYear += 10
                 return anniversaries
 
