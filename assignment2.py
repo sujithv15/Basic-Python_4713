@@ -12,7 +12,10 @@ class Assignment2:
                 currentYear = 2022
                 anniversaries = []
                 while anniversaryYear < currentYear:
-                        anniversaries.append(str(anniversaryYear)[2] + str(anniversaryYear)[3])
+                        tempStr = ""
+                        tempStr = tempStr + str(anniversaryYear)[2]
+                        tempStr = tempStr + str(anniversaryYear)[3]
+                        anniversaries.append(tempStr)
                         anniversaryYear += 10
                 return anniversaries
 
